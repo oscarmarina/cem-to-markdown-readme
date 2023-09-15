@@ -1,0 +1,38 @@
+{
+  "name": "@blockquote/cem-to-markdown-readme",
+  "version": "1.0.0",
+  "description": "Custom Element Manifest Plugin: Creates a README from a custom-elements.json",
+  "keywords": [
+    "custom-elements",
+    "custom-elements-json",
+    "custom-elements-manifest",
+    "customelements",
+    "README"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./index.js": {
+      "default": "./index.js"
+    },
+    "./package.json": {
+      "default": "./package.json"
+    }
+  },
+  "main": "index.js",
+  "module": "index.js",
+  "files": [
+    "/src/",
+    "*.js"
+  ],
+  "dependencies": {
+    "@blockquote/to-markdown": "^0.1.0",
+    "@custom-elements-manifest/analyzer": "^0.8.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
